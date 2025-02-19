@@ -4,10 +4,10 @@ function App() {
   return (
     <div className="min-h-screen flex flex-col">
       {/* Top Navigation Bar */}
-      <nav className="bg-teal-600 text-white py-3 px-4 flex justify-between items-center">
+      <nav className="bg-teal-600 text-white py-5 px-7 flex justify-between items-center">
         <div className="flex items-center">
-          <span className="text-xl font-semibold">
-            <span className="text-white">B</span>
+          <span className="text-2xl font-semibold">
+            <span className="text-white">R</span>
             <span className="text-amber-400">esort</span>
           </span>
           <span className="text-xs ml-1 text-gray-100">BEACH CLUB & RESORT</span>
@@ -28,7 +28,7 @@ function App() {
       
       {/* Hero Section */}
       <div className="relative">
-        <div className="bg-cover bg-center h-[500px]" style={{backgroundImage: "url('/demo.jpeg')"}}>
+        <div className="bg-cover bg-center h-[500px]" style={{backgroundImage: "url('/demo9.JPG')"}}>
           <div className="absolute inset-0 bg-black bg-opacity-30">
             <div className="container mx-auto px-6 md:px-12 py-16 text-white max-w-screen-xl">
               <div className="flex flex-col md:flex-row items-center">
@@ -104,7 +104,7 @@ function App() {
               <p className="text-gray-600 text-sm">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam.
               </p>
-              <a href="#" className="text-amber-500 text-sm mt-3 hover:underline">More Info Here</a>
+              
             </div>
             
             {/* Feature 2 */}
@@ -116,7 +116,7 @@ function App() {
               <p className="text-gray-600 text-sm">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam.
               </p>
-              <a href="#" className="text-amber-500 text-sm mt-3 hover:underline">More Info Here</a>
+            
             </div>
             
             {/* Feature 3 */}
@@ -128,7 +128,7 @@ function App() {
               <p className="text-gray-600 text-sm">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam.
               </p>
-              <a href="#" className="text-amber-500 text-sm mt-3 hover:underline">More Info Here</a>
+              
             </div>
           </div>
         </div>
@@ -140,7 +140,7 @@ function App() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             {/* Left Image */}
             <div>
-              <img src="/demo.jpeg" alt="Resort" className="rounded-lg shadow-lg w-full h-auto object-cover" />
+              <img src="/demo3.JPG" alt="Resort" className="rounded-lg shadow-lg w-full h-auto object-cover" />
             </div>
             
             {/* Right Content */}
@@ -153,22 +153,20 @@ function App() {
               <p className="text-gray-600 text-sm mb-6">
                 Resort ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis. Aenean commodo ligula eget dolor. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nullam quis risus.
               </p>
-              <button className="bg-amber-500 hover:bg-amber-600 text-white px-6 py-2 rounded">
-                READ MORE
-              </button>
+              
             </div>
           </div>
         </div>
       </div>
       
       {/* Discount Section */}
-      <div className="bg-teal-600 py-8 mb-12">
+      <div className=" py-8 mb-12 ">
         <div className="container mx-auto px-6 max-w-screen-xl">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
             {/* Left Content */}
-            <div className="text-white pr-10">
-              <h2 className="text-2xl md:text-3xl font-serif mb-3">Get a Discount For Newly Married Couples</h2>
-              <p className="text-sm text-white text-opacity-80 mb-6">
+            <div className="text-black pr-10">
+              <h2 className="text-2xl md:text-3xl font-serif mb-3">Get a Discount</h2>
+              <p className="text-sm text-stone-700 text-opacity-80 mb-6">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam.
               </p>
               <button className="bg-amber-500 hover:bg-amber-600 text-white px-5 py-2 rounded text-sm">
@@ -178,7 +176,7 @@ function App() {
             
             {/* Right Image */}
             <div className="hidden md:block">
-              <img src="/demo.jpeg" alt="Couples" className="rounded-lg w-full h-64 object-cover" />
+              <img src="/demo4.JPG" alt="Couples" className="rounded-lg w-full h-64 object-cover" />
             </div>
           </div>
         </div>
@@ -236,7 +234,7 @@ function App() {
 </div>
 
 {/* Gallery Section */}
-<div className="py-16 bg-white relative bg-[url('/demo.jpeg')] bg-cover bg-fixed bg-opacity-10">
+<div className="py-16 bg-white relative bg-[url('/demo8.JPG')] bg-cover bg-fixed bg-opacity-10">
   <div className="absolute inset-0 bg-white bg-opacity-80"></div>
   <div className="container mx-auto px-6 max-w-screen-xl relative z-10">
     <div className="text-center mb-12">
@@ -250,22 +248,22 @@ function App() {
     {/* Gallery Grid */}
     <div className="grid grid-cols-12 gap-4 mt-8">
       <div className="col-span-3 row-span-2">
-        <img src="/demo.jpeg" alt="Resort" className="w-full h-full object-cover rounded-md" />
+        <img src="/demo6.JPG" alt="Resort" className="w-full h-full object-cover rounded-md" />
       </div>
       <div className="col-span-3 row-span-1">
-        <img src="/demo.jpeg" alt="Resort" className="w-full h-full object-cover rounded-md" />
+        <img src="/demo2.JPG" alt="Resort" className="w-full h-full object-cover rounded-md" />
       </div>
       <div className="col-span-6 row-span-3">
-        <img src="/demo.jpeg" alt="Resort" className="w-full h-full object-cover rounded-md" />
+        <img src="/demo7.JPG" alt="Resort" className="w-full h-full object-cover rounded-md" />
       </div>
       <div className="col-span-3 row-span-1">
-        <img src="/demo.jpeg" alt="Resort" className="w-full h-full object-cover rounded-md" />
+        <img src="/demo8.JPG" alt="Resort" className="w-full h-full object-cover rounded-md" />
       </div>
       <div className="col-span-3 row-span-1">
-        <img src="/demo.jpeg" alt="Resort" className="w-full h-full object-cover rounded-md" />
+        <img src="/demo9.JPG" alt="Resort" className="w-full h-full object-cover rounded-md" />
       </div>
       <div className="col-span-3 row-span-1">
-        <img src="/demo.jpeg" alt="Resort" className="w-full h-full object-cover rounded-md" />
+        <img src="/demo5.JPG" alt="Resort" className="w-full h-full object-cover rounded-md" />
       </div>
     </div>
     
@@ -279,11 +277,7 @@ function App() {
         Aliquam fringilla diam et sapien cursus, ut sollicitudin mi iaculis. Donec ac ullamcorper arcu, quis hendrerit sapien. Maecenas ut turpis quis prem volutpat venenatis. Vestibulum ullamcorper magna facilisi, malesuada nisi acium massa volutpat. Nunc magna niador nibh et eleifend velit est quis ac diam cumvalla auctor quis el netus. Cras sagittis suscipit velit eu gravida risus congue ut. Pellentesque quis scelerisque eid ut eleismod justo. Phasellus maxmus sapittis tincidunt.
       </p>
       <div className="flex items-center justify-center">
-        <img src="/demo.jpeg" alt="John Doe" className="w-12 h-12 rounded-full object-cover mr-3" />
-        <div className="text-left">
-          <h4 className="font-medium">John Doe</h4>
-          <p className="text-gray-500 text-sm">Designer</p>
-        </div>
+     
       </div>
     </div>
   </div>
@@ -742,7 +736,7 @@ function App() {
             <div>
               <div className="flex items-center mb-4">
                 <span className="text-xl font-semibold">
-                  <span className="text-white">B</span>
+                  <span className="text-white">R</span>
                   <span className="text-amber-400">esort</span>
                 </span>
               </div>
