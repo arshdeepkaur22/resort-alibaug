@@ -300,7 +300,7 @@ function App() {
     {/* Main Venue */}
     <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12 items-center">
       <div>
-        <img src="/demo.jpeg" alt="Seaside Lounge" className="rounded-md w-full h-auto object-cover" />
+        <img src="/demo10.JPG" alt="Seaside Lounge" className="rounded-md w-full h-auto object-cover" />
         <div className="bg-teal-100 p-4 rounded-md mt-2">
           <h3 className="text-xl font-medium mb-2">Seaside Lounge</h3>
           
@@ -375,7 +375,7 @@ function App() {
     <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
       {/* Sunrise Lounge */}
       <div className="bg-teal-100 rounded-md overflow-hidden">
-        <img src="/demo.jpeg" alt="Sunrise Lounge" className="w-full h-48 object-cover" />
+        <img src="/demo9.JPG" alt="Sunrise Lounge" className="w-full h-48 object-cover" />
         <div className="p-4">
           <h3 className="text-xl font-medium mb-2">Sunrise Lounge</h3>
           
@@ -432,7 +432,7 @@ function App() {
 
       {/* Rooftop Lounge */}
       <div className="bg-teal-100 rounded-md overflow-hidden">
-        <img src="/demo.jpeg" alt="Rooftop Lounge" className="w-full h-48 object-cover" />
+        <img src="/demo15.JPG" alt="Rooftop Lounge" className="w-full h-48 object-cover" />
         <div className="p-4">
           <h3 className="text-xl font-medium mb-2">Rooftop Lounge</h3>
           
@@ -652,7 +652,7 @@ function App() {
   {/* Banner 1 */}
   <div className="relative h-72 bg-amber-500 overflow-hidden">
     <div className="absolute inset-0 bg-gradient-to-r from-amber-600 to-amber-500 z-10"></div>
-    <img src="/demo.jpeg" alt="Entertainment" className="absolute inset-0 w-full h-full object-cover mix-blend-overlay opacity-40" />
+    <img src="/demo16.JPG" alt="Entertainment" className="absolute inset-0 w-full h-full object-cover mix-blend-overlay opacity-40" />
     <div className="relative z-20 p-8 flex flex-col h-full justify-center text-white">
       <h3 className="text-2xl font-serif mb-3">Awesome With Live music</h3>
       <p className="text-sm mb-4 text-white text-opacity-90">Music, drinks, and the perfect summer night</p>
@@ -667,7 +667,7 @@ function App() {
   
   {/* Banner 2 */}
   <div className="relative h-72 overflow-hidden">
-    <img src="/demo.jpeg" alt="Summer Party" className="absolute inset-0 w-full h-full object-cover" />
+    <img src="/demo15.JPG" alt="Summer Party" className="absolute inset-0 w-full h-full object-cover" />
     <div className="absolute inset-0 bg-black bg-opacity-40"></div>
     <div className="relative z-20 p-8 flex flex-col h-full justify-center text-white">
       <h3 className="text-2xl font-serif mb-3">Never Ending Summer</h3>
@@ -683,7 +683,7 @@ function App() {
   
   {/* Banner 3 */}
   <div className="relative h-72 overflow-hidden">
-    <img src="/demo.jpeg" alt="Cocktails" className="absolute inset-0 w-full h-full object-cover" />
+    <img src="/demo12.JPG" alt="Cocktails" className="absolute inset-0 w-full h-full object-cover" />
     <div className="absolute inset-0 bg-black bg-opacity-40"></div>
     <div className="relative z-20 p-8 flex flex-col h-full justify-center text-white">
       <h3 className="text-2xl font-serif mb-3">Relax & Unwind</h3>
@@ -703,7 +703,7 @@ function App() {
   <div className="container mx-auto px-6 max-w-screen-xl">
     <div className="flex flex-col md:flex-row items-center justify-between">
       <div className="md:w-1/3 mb-6 md:mb-0">
-        <img src="/demo.jpeg" alt="Subscribe" className="rounded-md shadow-lg" />
+        <img src="/demo16.JPG" alt="Subscribe" className="rounded-md shadow-lg" />
       </div>
       <div className="md:w-2/3 md:pl-12">
         <span className="text-amber-500 text-sm">Newsletter</span>
