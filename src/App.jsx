@@ -31,6 +31,7 @@ function App() {
   return (
     <div className="min-h-screen flex flex-col">
      {/* Navbar with scroll behavior & glass effect */}
+{/* Navbar with scroll behavior & glass effect */}
 <nav 
   className={`
     fixed w-full z-[100] transition-transform duration-300
@@ -62,9 +63,9 @@ function App() {
       {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
     </button>
 
-    {/* Dropdown Menu */}
+    {/* Dropdown Menu (No Glass Effect) */}
     {isMenuOpen && (
-      <div className="absolute right-0 top-full mt-2 w-48 bg-white/10 backdrop-blur-md rounded-lg shadow-lg overflow-hidden border border-white/20">
+      <div className="absolute right-0 top-full mt-2 w-48 bg-[#144f6f] rounded-lg shadow-lg overflow-hidden">
         <div className="py-2">
           <a 
             href="#stats" 
