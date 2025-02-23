@@ -1,9 +1,10 @@
+
 import React, { useState, useEffect } from 'react';
-import GalleryCarousel from './components/Carousel';
-import { Menu, X } from 'lucide-react';
+import GalleryCarousel from './components/Carousel'
+
 
 function App() {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
   const [visible, setVisible] = useState(true);
   const [prevScrollPos, setPrevScrollPos] = useState(0);
 
@@ -11,14 +12,12 @@ function App() {
     const handleScroll = () => {
       const currentScrollPos = window.scrollY;
       
-      // Make navbar visible at the very top of the page
       if (currentScrollPos < 100) {
         setVisible(true);
         setPrevScrollPos(currentScrollPos);
         return;
       }
 
-      // Show/hide based on scroll direction
       const isScrollingUp = prevScrollPos > currentScrollPos;
       setVisible(isScrollingUp);
       setPrevScrollPos(currentScrollPos);
@@ -30,82 +29,93 @@ function App() {
 
   return (
     <div className="min-h-screen flex flex-col">
-     {/* Navbar with scroll behavior & glass effect */}
-{/* Navbar with scroll behavior & glass effect */}
-<nav 
-  className={`
-    fixed w-full z-[100] transition-transform duration-300
-    ${visible ? 'translate-y-0' : '-translate-y-full'}
-    bg-white/10 backdrop-blur-md text-white py-5 px-7 flex justify-between items-center shadow-md
-  `}
->
-  <div className="flex items-center">
-    <span className="text-2xl font-semibold">
-      <span className="text-white">Sea Beach Fort</span>
-    </span>
-    <span className="text-xs ml-1 text-gray-200">FORT AND CAMPING</span>
-  </div>
+      <div className={`
+        fixed w-full z-[100] transition-all duration-300
+        ${visible ? 'translate-y-0 opacity-100' : '-translate-y-full opacity-0'}
+      `}>
+        <nav className="backdrop-blur-sm bg-black/10 border-white/20">
+          <div className="mx-auto max-w-7xl px-7 py-5">
+            <div className="flex justify-between items-center">
+              <div className="flex flex-col md:flex-row md:items-baseline">
+                <span className="text-2xl font-semibold text-white">Sea Beach Fort</span>
+                <span className="text-[10px] md:text-xs md:ml-2 text-white/80 mt-1 md:mt-0">FORT AND CAMPING</span>
+              </div>
 
-  {/* Desktop Navigation */}
-  <div className="hidden md:flex space-x-6">
-    <a href="#stats" className="hover:text-amber-300 transition">About</a>
-    <a href="#gallery" className="hover:text-amber-300 transition">Gallery</a>
-    <a href="#facility" className="hover:text-amber-300 transition">Facility</a>
-    <a href="#callus" className="hover:text-amber-300 transition">Map</a>
-  </div>
+              {/* Desktop Navigation */}
+              <div className="hidden md:flex space-x-8">
+                <a href="#stats" className="text-white hover:text-white/80 transition">About</a>
+                <a href="#gallery" className="text-white hover:text-white/80 transition">Gallery</a>
+                <a href="#facility" className="text-white hover:text-white/80 transition">Facility</a>
+                <a href="#callus" className="text-white hover:text-white/80 transition">Map</a>
+              </div>
 
-  {/* Mobile Menu Button */}
-  <div className="md:hidden relative">
-    <button 
-      className="p-2 hover:bg-white/20 rounded-lg transition-colors"
-      onClick={() => setIsMenuOpen(!isMenuOpen)}
-    >
-      {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
-    </button>
+              {/* Mobile Menu Button */}
+              <button 
+                className="md:hidden px-5 py-4 text-white hover:bg-white/10 rounded-full transition-colors"
+                onClick={() => setIsSidebarOpen(true)}
+              >
+                Menu
+              </button>
+            </div>
+          </div>
+        </nav>
+      </div>
 
-    {/* Dropdown Menu (No Glass Effect) */}
-    {isMenuOpen && (
-      <div className="absolute right-0 top-full mt-2 w-48 bg-[#144f6f] rounded-lg shadow-lg overflow-hidden">
-        <div className="py-2">
-          <a 
-            href="#stats" 
-            className="block px-4 py-3 text-white hover:bg-white/20 transition-colors"
-            onClick={() => setIsMenuOpen(false)}
+      {/* Side Drawer for Mobile */}
+      <div 
+        className={`
+          fixed top-0 right-0 h-full w-64 
+          backdrop-blur-md bg-black/20
+          z-[110] transform transition-transform duration-300 ease-in-out
+          ${isSidebarOpen ? 'translate-x-0' : 'translate-x-full'}
+        `}
+      >
+        <div className="p-5">
+          <button 
+            className="mb-6 px-4 py-2 text-white hover:bg-white/10 rounded-lg transition-colors"
+            onClick={() => setIsSidebarOpen(false)}
           >
-            About
-          </a>
-          <a 
-            href="#gallery" 
-            className="block px-4 py-3 text-white hover:bg-white/20 transition-colors"
-            onClick={() => setIsMenuOpen(false)}
-          >
-            Gallery
-          </a>
-          <a 
-            href="#facility" 
-            className="block px-4 py-3 text-white hover:bg-white/20 transition-colors"
-            onClick={() => setIsMenuOpen(false)}
-          >
-            Facility
-          </a>
-          <a 
-            href="#callus" 
-            className="block px-4 py-3 text-white hover:bg-white/20 transition-colors"
-            onClick={() => setIsMenuOpen(false)}
-          >
-            Map
-          </a>
+            Close
+          </button>
+          
+          <div className="flex flex-col space-y-4">
+            <a 
+              href="#stats" 
+              className="text-white hover:bg-white/10 p-3 rounded-lg transition-colors"
+              onClick={() => setIsSidebarOpen(false)}
+            >
+              About
+            </a>
+            <a 
+              href="#gallery" 
+              className="text-white hover:bg-white/10 p-3 rounded-lg transition-colors"
+              onClick={() => setIsSidebarOpen(false)}
+            >
+              Gallery
+            </a>
+            <a 
+              href="#facility" 
+              className="text-white hover:bg-white/10 p-3 rounded-lg transition-colors"
+              onClick={() => setIsSidebarOpen(false)}
+            >
+              Facility
+            </a>
+            <a 
+              href="#callus" 
+              className="text-white hover:bg-white/10 p-3 rounded-lg transition-colors"
+              onClick={() => setIsSidebarOpen(false)}
+            >
+              Map
+            </a>
+          </div>
         </div>
       </div>
-    )}
-  </div>
-</nav>
 
-      {/* Overlay for mobile menu */}
-      {isMenuOpen && (
+      {/* Overlay for mobile sidebar */}
+      {isSidebarOpen && (
         <div 
-          className="fixed inset-0 bg-black/20 z-[90] md:hidden"
-          onClick={() => setIsMenuOpen(false)}
+          className="fixed inset-0 bg-black/50 z-[105]"
+          onClick={() => setIsSidebarOpen(false)}
         ></div>
       )}
 
@@ -236,18 +246,18 @@ function App() {
           </div>
         </div>
 
-        <div className="bg-white p-4 rounded shadow-sm border border-gray-100 mt-6">
-          <p className="text-center text-[#0077B6] font-medium">
-            Book your stay now and experience the best of beachfront luxury!
-          </p>
-        </div>
+       
       </div>
 
       {/* Right Side - Resort Image */}
       <div>
         <img src="/demo3.JPG" alt="Resort" className="rounded-lg shadow-lg w-full h-auto object-cover" />
       </div>
-
+      <div className="bg-white p-4 rounded shadow-sm border border-gray-100 mt-6">
+          <p className="text-center text-[#0077B6] font-medium">
+            Book your stay now and experience the best of beachfront luxury!
+          </p>
+        </div>
     </div>
   </div>
 </div>
@@ -255,15 +265,8 @@ function App() {
 {/* Features Banners */}
 <div className="grid grid-cols-1 md:grid-cols-3 gap-0" id='facility'>
         {/* Banner 1 */}
-        <div className="relative h-72 bg-[#0077B6] overflow-hidden">
-          <div className="absolute inset-0 bg-gradient-to-r from-[#023E8A] to-[#0077B6] z-10"></div>
-          <img src="/demo16.JPG" alt="Entertainment" className="absolute inset-0 w-full h-full object-cover mix-blend-overlay opacity-40" />
-          <div className="relative z-20 p-8 flex flex-col h-full justify-center text-white">
-            <h3 className="text-2xl font-serif mb-3">Awesome With Live music</h3>
-            <p className="text-sm mb-4 text-white text-opacity-90">Music, drinks, and the perfect summer night</p>
-            
-          </div>
-        </div>
+       
+   
         
         {/* Banner 2 - Keeping original image and overlay */}
         <div className="relative h-72 overflow-hidden">

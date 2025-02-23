@@ -7,9 +7,9 @@ import 'swiper/css/pagination';
 const GalleryCarousel = () => {
     const images = [
         '/c1.JPG', '/c2.JPG', '/c3.JPG', '/c4.JPG', '/c5.JPG', '/c6.JPG', '/c7.JPG', '/c8.JPG', '/c9.JPG',
-         '/demo2.JPG', '/demo3.JPG', '/demo4.JPG', '/demo5.JPG', '/demo6.JPG', 
-        '/demo7.JPG', '/demo8.JPG', '/demo9.JPG', '/demo10.JPG', '/demo11.JPG', '/demo12.JPG', 
-        '/demo13.JPG', '/demo14.JPG', '/demo15.JPG', '/demo16.JPG'
+         '/demo2.JPG', '/demo3.JPG', '/demo4.JPG', , '/demo6.JPG', 
+        '/demo7.JPG', '/demo5.JPG', '/demo8.JPG', '/c13.JPG', '/demo10.JPG', '/demo12.JPG', 
+        '/demo13.JPG', '/demo14.JPG', '/demo15.JPG', '/demo16.JPG','/c10.JPG', '/c12.JPG', '/c13.JPG',
       ];
        
   return (
