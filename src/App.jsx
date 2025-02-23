@@ -305,7 +305,7 @@ function App() {
     <div className="text-center bg-gray-100 p-6 rounded-lg shadow-md">
       <h3 className="text-2xl font-semibold text-[#0077B6]">₹1000 per night</h3>
       <p className="text-gray-600 mt-2">Includes food and accommodation costs.</p>
-      <p className="text-lg text-gray-500 mt-4">For more information, call at <a href='tel:8888111654' className='font-semibold'>+91 8888111654</a></p>
+      <p className="text-lg text-gray-500 mt-4">For more information, call at <br/><a href='tel:8888111654' className='font-semibold'>+91 8888111654</a></p>
     </div>
   </div>
 </div>
