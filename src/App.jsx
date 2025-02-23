@@ -51,7 +51,7 @@ function App() {
 
               {/* Mobile Menu Button */}
               <button 
-                className="md:hidden px-5 py-4 text-white hover:bg-white/10 rounded-full transition-colors"
+                className="md:hidden px-5 py-4 text-white hover:bg-white/10 rounded-full transition-colors font-semibold"
                 onClick={() => setIsSidebarOpen(true)}
               >
                 Menu
